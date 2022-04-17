@@ -19,33 +19,33 @@ public class UserTest {
     }
 
     @Test
-    public void get_all_users() {
-        List<User> expected = User.getAllUsers();
-        List<User> actual = new ArrayList<>();
+    public void getAllUsers() {
+        List<User> actual = User.getAllUsers();
+        List<User> expected = new ArrayList<>();
         actual.add(user);
         actual.add(user1);
         actual.add(user2);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void get_all_users_NO_NULL() {
-        List<User> expected = User.getAllUsers();
-        Assert.assertNotNull(expected);
+    public void getAllUsersNoNULL() {
+        List<User> actual = User.getAllUsers();
+        Assert.assertNotNull(actual);
     }
 
     @Test
-    public void get_how_many_users() {
-        int expected = User.getHowManyUsers();
-        int actual = 3;
-        Assert.assertEquals(expected, actual);
+    public void getHowManyUsers() {
+        int actual = User.getHowManyUsers();
+        int expected = 3;
+        Assert.assertEquals(actual, expected);
     }
 
     @Test
-    public void get_all_age_users() {
-        int expected = User.getAllAgeUsers();
-        int actual = 35 + 34 + 7;
-        Assert.assertEquals(expected, actual);
+    public void getAllAgeUsers() {
+        int actual = User.getAllAgeUsers();
+        int expected = 35 + 34 + 7;
+        Assert.assertEquals(actual, expected);
     }
 
 
